@@ -1,0 +1,11 @@
+#summary Problem Set 7 (8 problem)
+
+= PS7: problems =
+  # {{{[rectangle]}}} Find the largest rectangle in a histogram: given a histogram represented in an array, find the rectangle that has the largest area.
+  # {{{[findrotated]}}} Given an array A resulted from rotating an sorted vector (elements in the vector are unique), find whether an element x is in the array. Example: A = (3 4 5 6 1 2), x = 5.
+  # {{{[eval]}}} Evaluate a simple math expression that includes operators +,-,`*`,/. Example: 4 + 2`*`16/8 - 3.
+  # {{{[lcs]}}} Find the longest common substring of two given strings.
+  # {{{[maxevents]}}} Given a series of events for a day, each event has start_time and end_time (one event's end_time might overlap with another event's start_time), find a solution that maximizes the number of events one can finish in the day (no event time overlapping). For example: three events A(10-12), B(11-13), C(12-17), the solution would be A and C.
+  # {{{[scc]}}} Given a file containing N records, each record is a pair (A, B) meaning that A and B are connected. Design an algorithm to detect quickly whether X can reach Y, given any X and Y.
+  # {{{[max-submatrix]}}} Given a binary matrix, find out the maximum size square sub-matrix with all 1s.
+  # {{{[max-min-k]}}} Given an array of integers and a constant K, and define min-k as the minimum number for an continuous block of size K, please find the maximum min-k in this array. For example, when K=3, array=(2 3 5 3 4 6 4), the maximum min-k is 4, in the block (4 6 4).

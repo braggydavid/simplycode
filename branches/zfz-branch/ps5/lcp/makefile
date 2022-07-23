@@ -1,0 +1,2 @@
+EXE=lcp
+include ../../makefile

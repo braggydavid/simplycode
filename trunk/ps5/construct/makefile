@@ -1,0 +1,2 @@
+EXE=construct
+include ../../makefile

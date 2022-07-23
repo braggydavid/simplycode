@@ -1,0 +1,2 @@
+EXE=rotatevector
+include ../../makefile

@@ -1,0 +1,25 @@
+#include <iostream>
+#include "enumerate.h"
+
+using namespace std;
+
+
+int main(int argc, char *argv[])
+{
+    int a[] = {1, 2, 3, 4};
+    
+    int len = sizeof(a) / sizeof(a[0]);
+    
+    for (int i = 0; i < len; ++i)
+    {
+        cout << "iteratively: " << endl;
+        ienum(a[i]);
+        
+        cout << "recursively: " << endl;
+        renum(a[i]);
+        
+        cout << "---" << endl;
+    } 
+
+    return 0;
+}

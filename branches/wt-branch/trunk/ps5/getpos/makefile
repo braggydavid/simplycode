@@ -1,0 +1,2 @@
+EXE=getpos
+include ../../makefile

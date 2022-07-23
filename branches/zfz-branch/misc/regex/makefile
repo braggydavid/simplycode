@@ -1,0 +1,2 @@
+EXE=regex
+include ../../makefile

@@ -1,0 +1,2 @@
+EXE=intreverse
+include ../../makefile

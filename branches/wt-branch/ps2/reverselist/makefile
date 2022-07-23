@@ -1,0 +1,2 @@
+EXE=reverselist
+include ../../makefile

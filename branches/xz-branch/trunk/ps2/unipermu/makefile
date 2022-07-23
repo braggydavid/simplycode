@@ -1,0 +1,2 @@
+EXE=unipermu
+include ../../makefile

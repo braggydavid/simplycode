@@ -1,0 +1,2 @@
+EXE=enumerate
+include ../../makefile

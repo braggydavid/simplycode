@@ -1,0 +1,2 @@
+EXE=intersect
+include ../../makefile

@@ -1,0 +1,2 @@
+EXE=traversal
+include ../../makefile

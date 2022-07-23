@@ -1,0 +1,2 @@
+EXE=findrotated
+include ../../makefile

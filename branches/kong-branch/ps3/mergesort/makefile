@@ -1,0 +1,2 @@
+EXE=mergesort
+include ../../makefile

@@ -1,0 +1,2 @@
+EXE=rectangle
+include ../../makefile

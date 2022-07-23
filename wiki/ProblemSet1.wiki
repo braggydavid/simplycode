@@ -1,0 +1,8 @@
+#summary Problem Set 1 (3 problems in total).
+#labels Phase-Requirements
+
+== PS1: Problems ==
+  # {{{[sortedmedian]}}} Two sorted arrays A and B, find the median of all elements in A and B.
+  # {{{[sortedsum]}}} 给定一个sorted int数组和一个int变量叫x，返回是否有数组中的2个数的和等于x. 
+    * derived: check whether there exits 3 elements s.t. their sum equals x).
+  # {{{[lis]}}} Find a longest increasing sub-sequence in an integer array.

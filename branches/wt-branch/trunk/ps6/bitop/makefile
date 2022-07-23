@@ -1,0 +1,2 @@
+EXE=bitop
+include ../../makefile

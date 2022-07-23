@@ -1,0 +1,2 @@
+EXE=arrayprod
+include ../../makefile

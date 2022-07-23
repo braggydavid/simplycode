@@ -1,0 +1,9 @@
+#summary Problem Set 4 (5 problems)
+
+== PS4: problems ==
+  # {{{[minwindow]}}} Given a word (assume every char is unique in this word) and a string, find the length of the shortest snippet/substring that contains all characters of the word. For example: with word _"abc"_ and the string _"a brilliant cat is eating a big cake"_, the shortest snippet is _"big ca"_, which has length 6.
+  # {{{[anagram]}}} Given a list of words, find out all anagrams. An anagram is a word formed from another by rearranging its letters: _“Angel”_ is an anagram of _“glean"_.
+  # {{{[phonewords]}}} On a phone dial pad each digit (except 1 and 0) corresponds to 3 or 4 characters. Given a list of numbers and a dictionary, find out from the dictionary all words that each number corresponds to. For example, if the dictionary has 4 words _"aad, abc, ace, aef"_, number _"223"_ corresponds to words _"aad, ace"_.
+  # {{{[bitmapsort]}}} A file contains _n_ positive unique numbers, each less than _n_, where _n=10,000,000_. Quickly sort those numbers in _O_(_n_) time. _*hint*: use bitmap_.
+    * related: what if those numbers are not unique, and we know each number at most appears 10 times.
+  # {{{[rotatevector]}}} Rotate a one-dimensional vector of _n_ elements left by _i_ positions. For instance, with _n_=8 and _i_=3, the vector _abcdefgh_ is rotated to _defghabc_. Please rotate the vector in time proportional to _n_.

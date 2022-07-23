@@ -1,0 +1,2 @@
+EXE=miniwindow
+include ../../makefile

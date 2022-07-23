@@ -1,0 +1,2 @@
+EXE=bfsdfs
+include ../../makefile

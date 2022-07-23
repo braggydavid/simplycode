@@ -1,0 +1,2 @@
+EXE=wordreverse
+include ../../makefile

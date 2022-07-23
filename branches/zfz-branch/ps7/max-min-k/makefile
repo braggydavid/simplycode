@@ -1,0 +1,2 @@
+EXE=maxmink
+include ../../makefile

@@ -1,0 +1,14 @@
+#summary Problem Set 6 (6 problem)
+
+= PS6: problems =
+  # {{{[getdup]}}} Given an immutable array of size N which we know to be filled with integers ranging from 0 to N-2, inclusive.
+    * Checks to see if the array contains a duplicated entry. 
+    * Suppose the array contains exactly one duplicated entry and that duplicate appears exactly twice,  find the duplicated entry in constant space and linear time. 
+    * Suppose the array contains many duplicated entries, find one of the duplicated entries in constant space and linear time.
+  # {{{[kthorder]}}} Given an array of N integers, find the k-th smallest elements (k << N).
+  # {{{[bitop]}}} Using bit operation to implement add/minus/divide/multiply operations.
+  # {{{[bitnum]}}} Given an integer x, find a number that is smaller than x and has the same number of 0/1 bits as x. For example, given x = 13 (1101), the answer is 11 (1011).
+    * related: find a number that is larger than x and has the same number of bits as x.
+  # {{{[combination]}}} Select K numbers out of 0,1, ..., N-1 (N >= k > 0), print all the results (recursively and iteratively).
+  # {{{[wordreverse]}}} Given a string of words, reverse the characters of each word. For example, input string is "abc def ghi", the result is "cba fed ihg".
+    * related: reverse the words, but not the characters within a word. For example, input string is "abc def ghi", the result is "ghi def abc".

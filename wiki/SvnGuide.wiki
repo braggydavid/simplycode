@@ -1,0 +1,65 @@
+#summary General svn usage guidlines.
+#labels documentation
+
+== Basic Guidlines ==
+  # Get your password
+    * *Sign in* your google account and click the [http://code.google.com/p/simplycode/source/checkout Source] tab and see instructions.
+  # Check out the whole repository
+  {{{
+  svn checkout https://simplycode.googlecode.com/svn simplycode
+  }}}
+  # Assume your branch name will be "_xyz-branch_", you simply copy the trunk data and rename it to your branch:
+  {{{
+  svn copy https://simplycode.googlecode.com/svn/trunk https://simplycode.googlecode.com/svn/branches/xyz-branch -m "copy trunk"
+  }}}
+  # Work under your branch:
+  {{{
+  cd xyz-branch/
+  svn mkdir test
+  cd test/
+  touch hello.cc
+  svn add hello.cc
+  svn ci -m "checkin hello.cc"
+  }}}
+  
+== Copy branch to trunk ==
+  # DON'T merge branch to trunk -- just "*svn cp*"
+    * Each member is working almost independently under his/her own branch, and the work doesnt really impact others. 
+    * It's much easier just copying the code (under his/her branch) to the corresponding directory of trunk. 
+    * Trunk-branch sync-ing produces much more overhead, because all the trunk is copied to branch while syncing.
+  # Example: copy _lis_ under _zfz-branch_ to trunk
+  {{{
+  # after the zfz-branch gets reviewed..
+  cd zfz-branch/ 
+  svn cp lis ^/trunk/ps1/
+  svn ci -m "copy lis to trunk"
+  }}}
+
+== Trunk-branch sync (NOT recommend) ==
+  # Merge trunk to branch (let brunch has whatever the trunk has).
+  {{{
+  cd xyz-branch/
+  svn merge ^/trunk
+  svn ci -m "merge trunk to xyz-branch"
+  }}}
+  # Reintegrating a Branch (let trunk has whatever the brunch has).
+  {{{
+  cd trunk/
+  $ svn update  # (make sure the working copy is up to date)
+  $ svn merge --reintegrate ^/branches/xyz-branch
+  $ svn ci -m "merge xyz-branch to trunk"
+  }}}
+  # Reference: http://svnbook.red-bean.com/nightly/en/svn.branchmerge.basicmerging.html
+
+== Tree Conflict ==
+  * With local modifications in the working copy, you will most likely get tree conflicts flagged even if the tree structures don't differ. You will get conflicts like "local add, incoming add upon merge" or "local delete, incoming delete upon merge". 
+  * Example:
+  {{{
+  $ svn st
+  C sortedsum
+  >   local add, incoming add upon merge
+  }}}
+  * Resolve:
+  {{{
+  $ svn resolve --accept=working sortedsum
+  }}}

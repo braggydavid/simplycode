@@ -1,0 +1,2 @@
+EXE=matrixcircle
+include ../../makefile

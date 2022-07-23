@@ -1,0 +1,2 @@
+EXE=eval
+include ../../makefile

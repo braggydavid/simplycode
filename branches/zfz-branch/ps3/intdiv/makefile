@@ -1,0 +1,2 @@
+EXE=intdiv
+include ../../makefile

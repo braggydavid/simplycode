@@ -1,0 +1,2 @@
+EXE=combination
+include ../../makefile

@@ -1,0 +1,12 @@
+#summary Problem set 3 (6 problems)
+#labels Phase-Requirements
+
+== PS3: problems ==
+  # {{{[intreverse]}}} Reverse an 32-bit integer. For example: 12345 -> 52341, 1200 -> 21. _*care*: the reversed result might overflow, it should be detected._
+    * related: Reverse an 32-bit integer in binary format. For example: 1101 -> 1011, 1010 -> 101. Reversing in binary form wont have the overflow trouble. 
+  # {{{[findfirst]}}} Given a sorted integer array _A_ and an integer _x_, find the minimum _i_ s.t. _A_(_i_) = _x_. For example: Given _A_ = (1 2 3 3 3 4 4) and _x_ = 3, then _i_ = 2. _*care*: x might not exit in A._
+  # {{{[intdiv]}}} Implement 32-bit integer division without using the division operator "/". _*care*: avoid overflow._
+  # {{{[mergesort]}}} Merge-sort an integer array (both iteratively and recursively).
+    * related: Merge-sort a singly-linked list recursively (iteratively merge-sorting a singly-linked list isn't really meaningful).
+  # {{{[arrayprod]}}}Given an integer array _A_, compute array _B_ s.t. (1) _B_(_i_) equals to the product of all elements, except _A_(_i_), of _A_; (2) Using the division operator "/" is NOT allowed; (3) assume no overflow problem.
+  # {{{[intersect]}}}Given two sorted integer arrays _A_ and _B_, (1) find the intersection of _A_ and _B_, (2) find the union of _A_ and _B_, (3) find _A_ - _B_. _*care*: what if the size of A is much much larger than the size of B?_

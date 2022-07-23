@@ -1,0 +1,2 @@
+EXE=atoi
+include ../../makefile

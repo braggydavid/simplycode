@@ -1,0 +1,45 @@
+#summary Code organization guidelines.
+#labels codeorganization
+
+== Code Organization Guidelines ==
+  # *Please dont merge your Branch to Trunk (_b2t_) until your code get reviewed.*
+    * You are free to merge Trunk to your Branch (*_t2b_*), frequently.
+  # Everybody work under his/her own _branch_.
+  # Keep your branch in sync with _trunk_ frequently.
+    * At least sync once after each problem set is done.
+    * Before you start to work on a new problem set, sync with the _trunk_.
+    * Please refer to [http://code.google.com/p/simplycode/wiki/SvnGuide this link] for trunk-branch sync.
+  # _trunk_ organization:
+    {{{
+    trunk/
+        - ps1/
+        - ps2/
+        ...
+        - ps30/
+    }}}
+  # Each problem set directory has sub-directory for each problem. For example:
+    {{{
+    ps1/
+        - lis/  
+        - sortedmedian/  
+        - sortedsum/  
+    }}}
+  # The directory for a problem _prob_ should have the following files:
+    {{{ 
+    prob.h       # Header file, declaring functions;
+    prob.cc      # Algorithm implementation for those functions declared in header prob.h;
+    prob-main.cc # The 'main' function, invoking functions implemented in prob.cc;
+    }}}
+    * For example, in directory _ps1/lis_ we have:
+    {{{
+    ps1/lis/
+        - lis.h
+        - lis.cc
+        - lis-main.cc
+    }}}
+  # Makefile
+    * If you follow the above instructions organizing your code, then your code can be compiled using a generic makefile located under _trunk/_. You just have to create a new makefile which contains only two lines content. For example, the makefile for _ps1/lis_ is:
+    {{{
+    EXE = lis
+    include ../../makefile
+    }}}

@@ -1,0 +1,2 @@
+EXE=anagram
+include ../../makefile

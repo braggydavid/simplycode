@@ -1,0 +1,2 @@
+EXE=permutation
+include ../../makefile

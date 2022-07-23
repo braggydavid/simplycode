@@ -1,0 +1,2 @@
+EXE=getdup
+include ../../makefile

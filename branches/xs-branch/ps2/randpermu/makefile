@@ -1,0 +1,2 @@
+EXE=randpermu
+include ../../makefile

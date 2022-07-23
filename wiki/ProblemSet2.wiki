@@ -1,0 +1,14 @@
+#summary Problem Set 2 (6 problems)
+#labels Phase-Requirements
+
+== PS2: Problems == 
+  # {{{[n-queens]}}} 8 queens problem: print all solutions (implement both iterative and recursive algorithms).  
+    * derived: n queens problem.
+  # {{{[enumerate]}}} Given an integer n, generate all enumerations of 0, 1, ..., n-1.
+  # {{{[permutation]}}} Print all the permutation of a given array (implement both iterative and recursive algorithms).
+  # {{{[unipermu]}}} generate all permutations of a given array, and ensure each permutation is unique. 
+    * related: Given a permutation of an array, return the next permutation. For example, a permutation sequence: 123, 132, 213, 231, 312, 321; if given 213, the next is 231.
+  # {{{[randpermu]}}} Generate a random permutation of a given array.
+    * derived: shuffle a deck of cards.
+    * derived: generate k random numbers, each number is less than n.
+  # {{{[reverselist]}}} Reverse a singly-linked list (implement both iterative and recursive algorithms).

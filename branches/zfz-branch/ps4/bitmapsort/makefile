@@ -1,0 +1,2 @@
+EXE=bitmapsort
+include ../../makefile

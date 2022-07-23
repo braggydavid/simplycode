@@ -1,0 +1,3 @@
+EXE = division
+include ../../makefile
+

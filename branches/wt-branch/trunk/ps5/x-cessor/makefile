@@ -1,0 +1,2 @@
+EXE=xcessor
+include ../../makefile

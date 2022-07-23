@@ -1,0 +1,2 @@
+EXE=findfirst
+include ../../makefile

@@ -1,0 +1,2 @@
+EXE = kthorder
+include ../../makefile

@@ -1,0 +1,2 @@
+EXE=phonewords
+include ../../makefile

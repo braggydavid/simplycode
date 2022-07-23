@@ -1,0 +1,2 @@
+EXE=parser
+include ../../makefile

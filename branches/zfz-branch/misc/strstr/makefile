@@ -1,0 +1,2 @@
+EXE=strstr
+include ../../makefile

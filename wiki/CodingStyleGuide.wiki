@@ -1,0 +1,52 @@
+#summary Coding style guidelines
+
+== General Style Guidelines for Concise/Compact coding ==
+  * Rule: *Use curly braces, and try to span less lines*.
+  * Ex1: indentation is 4-char width.
+  * Ex2: operators
+    * Good: {{{ a = b; a == b; a < b; a > b; ++a; --b;}}}
+    * OKay: {{{ a=b; a==b; a<b; a>b; ++ a; -- b;}}}
+    * Bad: {{{ a= b; a ==b; a< b; a >b; }}}
+  * Ex3: curly braces
+    * In a single line: {{{ { ... } }}}
+    * In multiple lines (open and close at the same column):
+      {{{
+      {
+         ...
+      }
+      }}}
+  * Ex4: Reference/pointer placement: left align (right align is okay).
+    * Good: {{{ int& a = x; }}},  {{{ int* p = x; }}}
+    * Bad: {{{ int & a = x; }}},  {{{ int * p = x; }}}
+  * Ex5: brackets (put as closely as possible).
+    * Good: {{{ (a == b) }}}
+    * Okay: {{{ ( a == b ) }}}
+    * Bad:  {{{ (a == b ) }}}
+  * Ex6: _if_ statement with tiny body.
+    * Good: {{{ if (x == y) { ++x; } }}}
+    * Okay: {{{ if (x == y) ++x; }}}
+    * Bad:  
+      {{{ 
+      if (x == y) 
+        ++x;
+      }}}
+  * Ex7: _if-else_ statement with tiny body.
+    * Good: 
+      {{{
+      if (x == y) { print(x); ++x; }
+      else        { print(y); --y; }
+      }}}
+    * Or ...
+     {{{
+      x == y ? print(x++) : print(y--);
+     }}}
+  * Ex8: use "_? :_" to simplify code.
+    * Good: 
+    {{{ 
+    x == y ? ++x : --y; 
+    }}}
+    * Okay:
+    {{{
+    if (x == y) { ++x; }
+    else        { --y; }
+    }}}

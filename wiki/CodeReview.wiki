@@ -1,0 +1,29 @@
+#summary Code review process.
+
+== Code Review Process ==
+  # Once you finished working under your own _xyz-branch_, please checkin/commit your changes to your own branch and then send code review request. The following is a general process:
+    * Commit change in xyz-branch:
+    {{{
+    cd xyz-branch/
+    svn st       # double check file status.
+    svn ci -m "commit branch editing"
+    }}}
+    * Send for code review
+      # go to project page: http://code.google.com/p/simplycode/
+      # click the *Source* table.
+      # click the link *Request code review* (on the right side).
+      # fill summary, description, and branch path *branches/xyz-branch/ps30/hardproblem*
+    * Review issues
+      # go to project page: http://code.google.com/p/simplycode/
+      # click *Issues* tab, you should see the issues you just sent.
+  # Code review checkpoints
+    * Summary: should be telling what this issue is for. 
+      # Example summary: "_ps1: sortedsum_".
+    * Status: indicating the status of an issue.
+      # originator marks status "*new*" for a newly created issue; 
+      # reviewer changes status to "*started*" after publish the first comments; 
+      # the code might get changed many times back and forth between the reviewer and the originator, and finally reach a stage that both originator and reviewer get satisfied, and then the reviewer can mark the status as "*accepted*". 
+      # the originator can close the issue by mark status as "*Done*", and this will remove the issue.
+    * Owner: the reviewer is the owner of this issue, because he/she is responsible for the review.
+    * cc-list: send this issue to whoever you think is able to help. 
+      # please add yourself to the cc-list. This is important, because before an issue reaches the "accepted" status, the originator and reviewer have to communicate to review/change the code. Whenever the reviewer or the originator did some update on the code/comments, he/she wants the other party to know them asap. This is done by "publish", and whoever on the cc list will get an email about this new update. 
